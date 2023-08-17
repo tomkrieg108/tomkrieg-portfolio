@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap");
+
+@layer utilities {
+  .heading-lg {
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+    font-weight: 700;
+  }
+
+  .heading-md {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+    font-weight: 700;
+  }
+
+  .heading-sm {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+
+  .paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    @apply text-lightGray;
+  }
+
+  .max-width {
+    max-width: 1440px;
+  }
+}
+
+.ficon:hover {
+  /* https://angel-rs.github.io/css-color-filter-generator/ */
+  filter: brightness(0) saturate(100%) invert(73%) sepia(61%) saturate(418%)
+    hue-rotate(96deg) brightness(95%) contrast(88%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
